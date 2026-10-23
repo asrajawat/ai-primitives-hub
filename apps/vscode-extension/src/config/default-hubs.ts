@@ -51,27 +51,28 @@ export interface DefaultHubConfig {
  */
 const HARDCODED_DEFAULT_HUBS: DefaultHubConfig[] = [
   {
-    name: 'Awesome Copilot Hub',
-    description: 'Official curated collection',
+    name: 'Amadeus',
+    description: 'Profiles curated by Amadeus',
     icon: 'cloud',
     reference: {
       type: 'github',
-      location: 'github/awesome-copilot',
+      location: 'Amadeus-xDLC/genai.prompt-registry-config',
       ref: 'main'
     },
     recommended: true,
     enabled: true
   },
   {
-    name: 'Community Hub',
-    description: 'Community-contributed prompts',
-    icon: 'organization',
+    name: 'Prompt Registry Community Hub',
+    description: 'Profiles curated by the Prompt Registry Community',
+    icon: 'cloud',
     reference: {
       type: 'github',
-      location: 'promptregistry/community-hub',
+      location: 'AmadeusITGroup/prompt-registry-config',
       ref: 'main'
     },
-    enabled: false // Disabled by default
+    recommended: true,
+    enabled: true
   }
 ];
 
